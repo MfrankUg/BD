@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 55th Birthday, Carolyn Dhu | By Your Best Friend, Frank Muhindo</title>
+  <meta name="description" content="A beautiful 55th birthday celebration dedicated to Carolyn Dhu by her best friend, Frank Muhindo.">
+  
+  <!-- Google Fonts: Playfair Display, Cormorant Garamond, Great Vibes, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BACKGROUND FLOATING ROSE PETAL CANVAS -->
+  <canvas id="petalCanvas" aria-hidden="true"></canvas>
+
+  <!-- BLOOM FIREWORKS CANVAS -->
+  <canvas id="bloomFireworksCanvas" aria-hidden="true"></canvas>
+
+  <!-- BIRTHDAY SONG AUDIO ELEMENT -->
+  <audio id="birthdaySong" src="audio/Fifty-Five%20Roses%20for%20Carolyn.mp3" preload="auto" loop></audio>
+
+  <!-- TOP LIVELY MOVING ANNOUNCEMENT BANNER -->
+  <aside class="top-lively-banner" aria-label="Celebration Announcement">
+    <div class="top-lively-track">
+      <div class="top-lively-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg>
+        <span>Celebrating Carolyn Dhu</span>
+      </div>
+      <div class="top-lively-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg>
+        <span>55 Years of Grace</span>
+      </div>
+      <div class="top-lively-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg>
+        <span>By Your Best Friend, Frank Muhindo</span>
+      </div>
+      <div class="top-lively-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg>
+        <span>A Heart Filled With Radiance</span>
+      </div>
+      <div class="top-lively-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg>
+        <span>Happy 55th Birthday</span>
+      </div>
+      <!-- Duplicated for seamless loop -->
+      <div class="top-lively-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg>
+        <span>Celebrating Carolyn Dhu</span>
+      </div>
+      <div class="top-lively-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg>
+        <span>55 Years of Grace</span>
+      </div>
+      <div class="top-lively-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg>
+        <span>By Your Best Friend, Frank Muhindo</span>
+      </div>
+      <div class="top-lively-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg>
+        <span>A Heart Filled With Radiance</span>
+      </div>
+      <div class="top-lively-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg>
+        <span>Happy 55th Birthday</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- AMBIENT MUSIC & SOUND CONTROLLER (EXPLICIT PAUSE / PLAY) -->
+  <aside class="ambience-controller" aria-label="Audio Controls">
+    <div class="music-info-pill">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+      </svg>
+      <span>Fifty-Five Roses</span>
+    </div>
+    <button id="musicToggleBtn" class="music-toggle-btn playing" aria-label="Pause Music">
+      <!-- Pause icon when playing -->
+      <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+      </svg>
+      <!-- Play icon when paused -->
+      <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      <span id="musicBtnText">Pause</span>
+    </button>
+    <div id="soundwaveIndicator" class="soundwave-indicator active" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       SECTION 1: HERO - A GRAND BIRTHDAY ENTRANCE
+       ========================================================================== -->
+  <header class="hero-section" id="hero">
+    <!-- Subtle rotating floral crest in background -->
+    <svg class="hero-backdrop-crest" viewBox="0 0 200 200" aria-hidden="true">
+      <circle cx="100" cy="100" r="90" fill="none" stroke="#c59b27" stroke-width="1" stroke-dasharray="4,6"/>
+      <circle cx="100" cy="100" r="82" fill="none" stroke="#b31b34" stroke-width="0.8"/>
+      <path d="M100 20 C110 50 150 90 180 100 C150 110 110 150 100 180 C90 150 50 110 20 100 C50 90 90 50 100 20 Z" fill="none" stroke="#c59b27" stroke-width="0.8"/>
+    </svg>
+
+    <div class="hero-content">
+      
+      <!-- TOP IMAGE: YOUNG CAL MEDALLION WITH NICE FLOWERS AROUND -->
+      <div class="young-cal-showcase">
+        <div class="young-cal-wreath-frame">
+          <svg class="young-cal-garland-svg" viewBox="0 0 320 320" aria-hidden="true">
+            <circle cx="160" cy="160" r="142" fill="none" stroke="#c59b27" stroke-width="2" stroke-dasharray="5,6"/>
+            <circle cx="160" cy="160" r="130" fill="none" stroke="#e0b84c" stroke-width="1"/>
+            
+            <circle cx="160" cy="22" r="14" fill="#b31b34"/>
+            <circle cx="160" cy="22" r="8" fill="#f8b6c4"/>
+            <path d="M148 20 C140 10 132 18 140 28" fill="#758a74"/>
+            <path d="M172 20 C180 10 188 18 180 28" fill="#758a74"/>
+
+            <circle cx="258" cy="62" r="12" fill="#cf2442"/>
+            <circle cx="258" cy="62" r="6" fill="#fceced"/>
+            <path d="M266 52 C276 46 278 56 270 64" fill="#758a74"/>
+
+            <circle cx="298" cy="160" r="14" fill="#b31b34"/>
+            <circle cx="298" cy="160" r="8" fill="#f8b6c4"/>
+            <path d="M296 146 C306 138 310 148 304 156" fill="#758a74"/>
+            <path d="M296 174 C306 182 310 172 304 164" fill="#758a74"/>
+
+            <circle cx="258" cy="258" r="12" fill="#e64968"/>
+            <circle cx="258" cy="258" r="6" fill="#fceced"/>
+            <path d="M268 266 C274 276 264 280 258 272" fill="#758a74"/>
+
+            <circle cx="160" cy="298" r="15" fill="#b31b34"/>
+            <circle cx="160" cy="298" r="8" fill="#f8b6c4"/>
+            <path d="M146 300 C138 310 130 302 138 292" fill="#758a74"/>
+            <path d="M174 300 C182 310 190 302 182 292" fill="#758a74"/>
+
+            <circle cx="62" cy="258" r="12" fill="#cf2442"/>
+            <circle cx="62" cy="258" r="6" fill="#fceced"/>
+            <path d="M52 266 C46 276 56 280 62 272" fill="#758a74"/>
+
+            <circle cx="22" cy="160" r="14" fill="#b31b34"/>
+            <circle cx="22" cy="160" r="8" fill="#f8b6c4"/>
+            <path d="M24 146 C14 138 10 148 16 156" fill="#758a74"/>
+            <path d="M24 174 C14 182 10 172 16 164" fill="#758a74"/>
+
+            <circle cx="62" cy="62" r="12" fill="#e64968"/>
+            <circle cx="62" cy="62" r="6" fill="#fceced"/>
+            <path d="M54 52 C44 46 42 56 50 64" fill="#758a74"/>
+          </svg>
+
+          <!-- Circular Portrait Image -->
+          <div class="young-cal-portrait-wrapper">
+            <img src="img/young cal.jpeg" alt="Young Carolyn Dhu surrounded by blooming roses" loading="eager">
+            <div class="portrait-glass-shine"></div>
+          </div>
+        </div>
+
+        <div class="young-cal-ribbon-badge">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C9 2 7 4 7 7c0 2 1 3.5 2 4.5C8 12.5 7 14 7 16c0 3 2.5 5 5 5s5-2 5-5c0-2-1-3.5-2-4.5 1-1 2-2.5 2-4.5 0-3-2-5-5-5zm0 2c1.7 0 3 1.3 3 3 0 1.2-.7 2.2-1.7 2.7-.4.2-.8.5-1.1.9-.1-.4-.2-.8-.2-1.2 0-.2-.1-.4-.3-.4s-.3.2-.3.4c0 .5.1 1 .3 1.5-.4-.4-.8-.7-1.3-.9C9.7 9.2 9 8.2 9 7c0-1.7 1.3-3 3-3z"/>
+          </svg>
+          <span>Young Carolyn &bull; 55 Golden Years</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C9 2 7 4 7 7c0 2 1 3.5 2 4.5C8 12.5 7 14 7 16c0 3 2.5 5 5 5s5-2 5-5c0-2-1-3.5-2-4.5 1-1 2-2.5 2-4.5 0-3-2-5-5-5zm0 2c1.7 0 3 1.3 3 3 0 1.2-.7 2.2-1.7 2.7-.4.2-.8.5-1.1.9-.1-.4-.2-.8-.2-1.2 0-.2-.1-.4-.3-.4s-.3.2-.3.4c0 .5.1 1 .3 1.5-.4-.4-.8-.7-1.3-.9C9.7 9.2 9 8.2 9 7c0-1.7 1.3-3 3-3z"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero-intro-pill">
+        <span class="hero-intro-text">A 55th Birthday Celebration</span>
+      </div>
+
+      <h1 class="hero-title" id="heroAnimatedTitle">
+        Happy 55th Birthday, Carolyn Dhu!
+      </h1>
+
+      <!-- FRANK MUHINDO DEDICATION BADGE -->
+      <div class="frank-dedication-badge">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <span>By Your Best Friend, Frank Muhindo</span>
+      </div>
+
+      <div class="hero-message-box">
+        <p class="hero-message-text">
+          Celebrating fifty-five years of grace, kindness, and unforgettable memories. Today is all about you, Carolyn.
+        </p>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#gardenSection" class="btn-primary" id="enterGardenBtn">
+          <span>Enter Your Rose Garden</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+          </svg>
+        </a>
+
+        <div class="scroll-hint">
+          <span>Scroll to explore</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION 2: THE ROSE GARDEN (FEATURING REAL ROSE PHOTOGRAPHY)
+       ========================================================================== -->
+  <main>
+    <section class="rose-garden-section" id="gardenSection">
+      <div class="section-header">
+        <div class="section-tag">Floral Sanctuary</div>
+        <h2 class="section-title">The Rose Garden</h2>
+        <div class="floral-divider">
+          <span class="line"></span>
+          <svg class="rose-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C9 2 7 4 7 7c0 2 1 3.5 2 4.5C8 12.5 7 14 7 16c0 3 2.5 5 5 5s5-2 5-5c0-2-1-3.5-2-4.5 1-1 2-2.5 2-4.5 0-3-2-5-5-5zm0 3c1.1 0 2 .9 2 2 0 .8-.5 1.5-1.2 1.8-.3.2-.6.5-.8.8-.2-.3-.5-.6-.8-.8-.7-.3-1.2-1-1.2-1.8 0-1.1.9-2 2-2z"/>
+          </svg>
+          <span class="line"></span>
+        </div>
+        <p class="section-subtitle">
+          Touch any rose to reveal a heartfelt birthday wish.
+        </p>
+      </div>
+
+      <div class="garden-grid">
+        <!-- Rose 1: Velvet Crimson Rose Image -->
+        <article class="rose-card" tabindex="0" aria-label="Velvet Crimson Rose blessing">
+          <div class="rose-photo-frame">
+            <img src="img/VELVET CRIMSON ROSE.png" alt="Velvet Crimson Rose in full bloom" loading="lazy">
+          </div>
+          <span class="rose-variety-tag">Velvet Crimson Rose</span>
+          <h3 class="rose-card-title">Everlasting Friendship</h3>
+          <p class="rose-card-message">“Your friendship makes life truly beautiful.”</p>
+          <div class="rose-click-pill">Click To Bloom</div>
+        </article>
+
+        <!-- Rose 2: English Blush Rose Image -->
+        <article class="rose-card" tabindex="0" aria-label="English Blush Rose blessing">
+          <div class="rose-photo-frame">
+            <img src="img/ENGLISH BLUSH ROSE.png" alt="English Blush Rose in full bloom" loading="lazy">
+          </div>
+          <span class="rose-variety-tag">English Blush Rose</span>
+          <h3 class="rose-card-title">Joyful Radiance</h3>
+          <p class="rose-card-message">“May your days always bloom with happiness.”</p>
+          <div class="rose-click-pill">Click To Bloom</div>
+        </article>
+
+        <!-- Rose 3: Ivory Pearl Rose Image -->
+        <article class="rose-card" tabindex="0" aria-label="Ivory Pearl Rose blessing">
+          <div class="rose-photo-frame">
+            <img src="img/IVORY PEARL ROSE.png" alt="Ivory Pearl Rose in full bloom" loading="lazy">
+          </div>
+          <span class="rose-variety-tag">Ivory Pearl Rose</span>
+          <h3 class="rose-card-title">Gentle Serenity</h3>
+          <p class="rose-card-message">“Surrounded by peace, love, and wonderful moments.”</p>
+          <div class="rose-click-pill">Click To Bloom</div>
+        </article>
+
+        <!-- Rose 4: Deep Damask Rose Image -->
+        <article class="rose-card" tabindex="0" aria-label="Deep Damask Rose blessing">
+          <div class="rose-photo-frame">
+            <img src="img/DEEP DAMASK ROSE.png" alt="Deep Damask Rose in full bloom" loading="lazy">
+          </div>
+          <span class="rose-variety-tag">Deep Damask Rose</span>
+          <h3 class="rose-card-title">Radiant New Chapter</h3>
+          <p class="rose-card-message">“May this new chapter be your most radiant yet.”</p>
+          <div class="rose-click-pill">Click To Bloom</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: PHOTO GALLERY - TWO DYNAMIC MOVING ROWS
+         ROW 1 MOVES LEFT & ROW 2 MOVES RIGHT
+         ========================================================================== -->
+    <section class="gallery-section" id="gallerySection">
+      <div class="section-header">
+        <div class="section-tag">A Lifetime of Memories</div>
+        <h2 class="section-title">Moments of Grace & Radiance</h2>
+        <div class="floral-divider">
+          <span class="line"></span>
+          <svg class="rose-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C9 2 7 4 7 7c0 2 1 3.5 2 4.5C8 12.5 7 14 7 16c0 3 2.5 5 5 5s5-2 5-5c0-2-1-3.5-2-4.5 1-1 2-2.5 2-4.5 0-3-2-5-5-5zm0 3c1.1 0 2 .9 2 2 0 .8-.5 1.5-1.2 1.8-.3.2-.6.5-.8.8-.2-.3-.5-.6-.8-.8-.7-.3-1.2-1-1.2-1.8 0-1.1.9-2 2-2z"/>
+          </svg>
+          <span class="line"></span>
+        </div>
+        <p class="section-subtitle">
+          Cherished memories across fifty-five wonderful years. Click any photo to view full size.
+        </p>
+      </div>
+
+      <div class="marquee-gallery-wrapper">
+        <!-- ROW 1: GLIDES TO THE LEFT -->
+        <div class="marquee-row marquee-row-1" aria-label="Carolyn photo row 1 moving left">
+          <div class="marquee-track track-move-left">
+            <!-- Item 1 -->
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/cal.jpeg" alt="Portrait of Carolyn Dhu smiling with elegance" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    Cherished Smile
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">A Heart of Gold</h3>
+                <p class="photo-desc">Kindness that touches everyone.</p>
+              </div>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/WhatsApp Image 2026-10-12 at 23.18.31.jpeg" alt="Carolyn Dhu in lovely candid moment" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    Warmth & Light
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">Sincere Friendship</h3>
+                <p class="photo-desc">Bringing comfort and sunshine.</p>
+              </div>
+            </article>
+
+            <!-- Item 3 -->
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/cal2.jpeg" alt="Carolyn Dhu radiating happiness" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    Pure Joy
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">Golden Moments</h3>
+                <p class="photo-desc">Surrounded by laughter & love.</p>
+              </div>
+            </article>
+
+            <!-- Item 4 -->
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/young cal 2.jpeg" alt="Young Carolyn Dhu portrait" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    Youthful Grace
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">Timeless Radiance</h3>
+                <p class="photo-desc">Cherished from the beginning.</p>
+              </div>
+            </article>
+
+            <!-- DUPLICATED ITEMS FOR INFINITE SEAMLESS LOOP -->
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/cal.jpeg" alt="Portrait of Carolyn Dhu smiling with elegance" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    Cherished Smile
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">A Heart of Gold</h3>
+                <p class="photo-desc">Kindness that touches everyone.</p>
+              </div>
+            </article>
+
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/WhatsApp Image 2026-10-12 at 23.18.31.jpeg" alt="Carolyn Dhu in lovely candid moment" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    Warmth & Light
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">Sincere Friendship</h3>
+                <p class="photo-desc">Bringing comfort and sunshine.</p>
+              </div>
+            </article>
+
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/cal2.jpeg" alt="Carolyn Dhu radiating happiness" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    Pure Joy
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">Golden Moments</h3>
+                <p class="photo-desc">Surrounded by laughter & love.</p>
+              </div>
+            </article>
+
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/young cal 2.jpeg" alt="Young Carolyn Dhu portrait" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    Youthful Grace
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">Timeless Radiance</h3>
+                <p class="photo-desc">Cherished from the beginning.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- ROW 2: GLIDES TO THE RIGHT -->
+        <div class="marquee-row marquee-row-2" aria-label="Carolyn photo row 2 moving right">
+          <div class="marquee-track track-move-right">
+            <!-- Item 5 -->
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/cal3.jpeg" alt="Carolyn Dhu celebrating life" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    Enduring Beauty
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">Fifty-Five & Fabulous</h3>
+                <p class="photo-desc">A wonderful chapter ahead.</p>
+              </div>
+            </article>
+
+            <!-- Item 6 -->
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/WhatsApp Image 2026-10-12 at 23.18.31 (1).jpeg" alt="Carolyn Dhu smiling brightly" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    Spark of Life
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">Precious Milestones</h3>
+                <p class="photo-desc">Every day brighter with you.</p>
+              </div>
+            </article>
+
+            <!-- Item 7 -->
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/WhatsApp Image 2026-10-12 at 23.18.32.jpeg" alt="Carolyn Dhu cherished portrait" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    True Elegance
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">Celebrated Today</h3>
+                <p class="photo-desc">Wishing you endless peace.</p>
+              </div>
+            </article>
+
+            <!-- Item 8 -->
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/young cal.jpeg" alt="Carolyn in youthful charm" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    A Lifetime of Memories
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">Everlasting Bloom</h3>
+                <p class="photo-desc">Here is to glorious years.</p>
+              </div>
+            </article>
+
+            <!-- DUPLICATED ITEMS FOR INFINITE SEAMLESS LOOP -->
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/cal3.jpeg" alt="Carolyn Dhu celebrating life" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    Enduring Beauty
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">Fifty-Five & Fabulous</h3>
+                <p class="photo-desc">A wonderful chapter ahead.</p>
+              </div>
+            </article>
+
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/WhatsApp Image 2026-10-12 at 23.18.31 (1).jpeg" alt="Carolyn Dhu smiling brightly" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    Spark of Life
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">Precious Milestones</h3>
+                <p class="photo-desc">Every day brighter with you.</p>
+              </div>
+            </article>
+
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/WhatsApp Image 2026-10-12 at 23.18.32.jpeg" alt="Carolyn Dhu cherished portrait" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    True Elegance
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">Celebrated Today</h3>
+                <p class="photo-desc">Wishing you endless peace.</p>
+              </div>
+            </article>
+
+            <article class="photo-card" tabindex="0">
+              <div class="photo-wrapper">
+                <img src="img/young cal.jpeg" alt="Carolyn in youthful charm" loading="lazy">
+                <div class="photo-overlay">
+                  <span class="photo-overlay-tag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="currentColor"/></svg>
+                    A Lifetime of Memories
+                  </span>
+                </div>
+              </div>
+              <div class="photo-caption">
+                <h3 class="photo-title">Everlasting Bloom</h3>
+                <p class="photo-desc">Here is to glorious years.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL FOR PHOTOGRAPHS -->
+    <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Preview">
+      <div class="lightbox-content">
+        <button id="lightboxCloseBtn" class="lightbox-close-btn" aria-label="Close photo preview">
+          <svg viewBox="0 0 24 24" style="width:20px; height:20px; fill:currentColor;" aria-hidden="true">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+          </svg>
+        </button>
+        <div class="lightbox-image-box">
+          <img id="lightboxImage" src="" alt="">
+        </div>
+        <div class="lightbox-info">
+          <h3 id="lightboxTitle"></h3>
+          <p id="lightboxDesc"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         SECTION 4: THE BIRTHDAY MESSAGE: CONCISE & PROFESSIONAL
+         ========================================================================== -->
+    <section class="message-section" id="messageSection">
+      <div class="section-header">
+        <div class="section-tag">A Personal Note</div>
+        <h2 class="section-title">The Birthday Letter</h2>
+        <div class="floral-divider">
+          <span class="line"></span>
+          <svg class="rose-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C9 2 7 4 7 7c0 2 1 3.5 2 4.5C8 12.5 7 14 7 16c0 3 2.5 5 5 5s5-2 5-5c0-2-1-3.5-2-4.5 1-1 2-2.5 2-4.5 0-3-2-5-5-5zm0 3c1.1 0 2 .9 2 2 0 .8-.5 1.5-1.2 1.8-.3.2-.6.5-.8.8-.2-.3-.5-.6-.8-.8-.7-.3-1.2-1-1.2-1.8 0-1.1.9-2 2-2z"/>
+          </svg>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <article class="letter-parchment">
+        <span class="letter-salutation">Dear Carolyn,</span>
+
+        <div class="letter-body">
+          <p class="letter-paragraph">
+            Today, we celebrate not just your <span class="highlight-rose">55th birthday</span>, but the warmth, generosity, and grace you bring into the world every single day.
+          </p>
+
+          <p class="letter-paragraph">
+            May this new milestone bring you genuine peace, vibrant health, endless reasons to smile, and countless moments to treasure.
+          </p>
+
+          <p class="letter-paragraph">
+            You deserve a life as beautiful, radiant, and inspiring as a garden in full bloom.
+          </p>
+        </div>
+
+        <div class="letter-signature">
+          <div class="signature-line-1">Happy 55th Birthday, Carolyn.</div>
+          <div class="signature-line-2">Your Best Friend, Frank Muhindo</div>
+        </div>
+      </article>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 6: PLAYFUL BIRTHDAY INTERACTION
+         Choose a Rose, Discover a Wish
+         ========================================================================== -->
+    <section class="wishes-section" id="wishesSection">
+      <div class="section-header">
+        <div class="section-tag">Garden Discovery</div>
+        <h2 class="section-title">Choose a Rose, Discover a Wish</h2>
+        <div class="floral-divider">
+          <span class="line"></span>
+          <svg class="rose-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C9 2 7 4 7 7c0 2 1 3.5 2 4.5C8 12.5 7 14 7 16c0 3 2.5 5 5 5s5-2 5-5c0-2-1-3.5-2-4.5 1-1 2-2.5 2-4.5 0-3-2-5-5-5zm0 3c1.1 0 2 .9 2 2 0 .8-.5 1.5-1.2 1.8-.3.2-.6.5-.8.8-.2-.3-.5-.6-.8-.8-.7-.3-1.2-1-1.2-1.8 0-1.1.9-2 2-2z"/>
+          </svg>
+          <span class="line"></span>
+        </div>
+        <p class="section-subtitle">
+          Select any rose to uncover special wishes for your 55th year.
+        </p>
+      </div>
+
+      <div class="wishes-progress-bar">
+        <span class="wishes-counter-tag" id="wishesCounterText">1 of 5 Wishes Discovered</span>
+        <div class="wishes-meter">
+          <div class="wishes-meter-fill" id="wishesMeterFill" style="width: 20%;"></div>
+        </div>
+      </div>
+
+      <div class="roses-selection-row" role="tablist">
+        <!-- Rose 1: Happiness -->
+        <button class="wish-rose-button active revealed" role="tab" aria-selected="true" id="roseTab0">
+          <svg class="wish-rose-svg" viewBox="0 0 60 60" aria-hidden="true">
+            <circle cx="30" cy="25" r="18" fill="#e63956"/>
+            <path d="M30 15 C36 15 42 21 42 27 C42 33 36 39 30 39 C24 39 18 33 18 27 C18 21 24 15 30 15 Z" fill="#b31b34"/>
+            <circle cx="30" cy="27" r="6" fill="#f7e7a9"/>
+            <path d="M30 43 L30 55" stroke="#758a74" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <div class="wish-rose-label">Rose 1</div>
+          <div class="wish-rose-color">Happiness</div>
+        </button>
+
+        <!-- Rose 2: Love -->
+        <button class="wish-rose-button" role="tab" aria-selected="false" id="roseTab1">
+          <svg class="wish-rose-svg" viewBox="0 0 60 60" aria-hidden="true">
+            <circle cx="30" cy="25" r="18" fill="#f48ca1"/>
+            <path d="M30 15 C36 15 42 21 42 27 C42 33 36 39 30 39 C24 39 18 33 18 27 C18 21 24 15 30 15 Z" fill="#cf2442"/>
+            <circle cx="30" cy="27" r="6" fill="#fcecee"/>
+            <path d="M30 43 L30 55" stroke="#758a74" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <div class="wish-rose-label">Rose 2</div>
+          <div class="wish-rose-color">Love</div>
+        </button>
+
+        <!-- Rose 3: Good Health -->
+        <button class="wish-rose-button" role="tab" aria-selected="false" id="roseTab2">
+          <svg class="wish-rose-svg" viewBox="0 0 60 60" aria-hidden="true">
+            <circle cx="30" cy="25" r="18" fill="#faebd7"/>
+            <path d="M30 15 C36 15 42 21 42 27 C42 33 36 39 30 39 C24 39 18 33 18 27 C18 21 24 15 30 15 Z" fill="#dfbe98"/>
+            <circle cx="30" cy="27" r="6" fill="#c59b27"/>
+            <path d="M30 43 L30 55" stroke="#758a74" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <div class="wish-rose-label">Rose 3</div>
+          <div class="wish-rose-color">Good Health</div>
+        </button>
+
+        <!-- Rose 4: Beautiful Memories -->
+        <button class="wish-rose-button" role="tab" aria-selected="false" id="roseTab3">
+          <svg class="wish-rose-svg" viewBox="0 0 60 60" aria-hidden="true">
+            <circle cx="30" cy="25" r="18" fill="#b31b34"/>
+            <path d="M30 15 C36 15 42 21 42 27 C42 33 36 39 30 39 C24 39 18 33 18 27 C18 21 24 15 30 15 Z" fill="#5c0a18"/>
+            <circle cx="30" cy="27" r="6" fill="#f7e7a9"/>
+            <path d="M30 43 L30 55" stroke="#758a74" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <div class="wish-rose-label">Rose 4</div>
+          <div class="wish-rose-color">Memories</div>
+        </button>
+
+        <!-- Rose 5: New Beginnings -->
+        <button class="wish-rose-button" role="tab" aria-selected="false" id="roseTab4">
+          <svg class="wish-rose-svg" viewBox="0 0 60 60" aria-hidden="true">
+            <circle cx="30" cy="25" r="18" fill="#f38181"/>
+            <path d="M30 15 C36 15 42 21 42 27 C42 33 36 39 30 39 C24 39 18 33 18 27 C18 21 24 15 30 15 Z" fill="#fce38a"/>
+            <circle cx="30" cy="27" r="6" fill="#b31b34"/>
+            <path d="M30 43 L30 55" stroke="#758a74" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <div class="wish-rose-label">Rose 5</div>
+          <div class="wish-rose-color">New Beginnings</div>
+        </button>
+      </div>
+
+      <!-- WISH DISPLAY CARD -->
+      <div class="wish-display-card" id="wishDisplayCard">
+        <h3 class="wish-card-title" id="wishDisplayTitle">A Rose for Happiness</h3>
+        <p class="wish-card-text" id="wishDisplayText">
+          “May happiness find you in every small moment and every milestone celebration.”
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: INTERACTIVE BIRTHDAY SURPRISE (PRESENT BOX IMAGE)
+         Featuring Surprise Present Gift.png
+         ========================================================================== -->
+    <section class="surprise-section" id="surpriseSection">
+      <div class="section-header">
+        <div class="section-tag">Special Moment</div>
+        <h2 class="section-title">A Birthday Surprise for You</h2>
+        <div class="floral-divider">
+          <span class="line"></span>
+          <svg class="rose-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C9 2 7 4 7 7c0 2 1 3.5 2 4.5C8 12.5 7 14 7 16c0 3 2.5 5 5 5s5-2 5-5c0-2-1-3.5-2-4.5 1-1 2-2.5 2-4.5 0-3-2-5-5-5zm0 3c1.1 0 2 .9 2 2 0 .8-.5 1.5-1.2 1.8-.3.2-.6.5-.8.8-.2-.3-.5-.6-.8-.8-.7-.3-1.2-1-1.2-1.8 0-1.1.9-2 2-2z"/>
+          </svg>
+          <span class="line"></span>
+        </div>
+        <p class="section-subtitle">
+          Click the present box to reveal your birthday surprise.
+        </p>
+      </div>
+
+      <div class="gift-box-stage">
+        <!-- Interactive Present Box with Surprise Present Gift.png -->
+        <div class="present-box-image-wrap" id="giftBoxInteractive" tabindex="0" role="button" aria-label="Open Birthday Surprise Gift Box">
+          <img src="img/Surprise Present Gift.png" alt="A beautiful surprise birthday gift box" class="present-gift-img">
+          <div class="present-glow-halo"></div>
+        </div>
+
+        <div class="click-to-open-hint">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+          </svg>
+          <span>Click the box to open your surprise</span>
+        </div>
+
+        <!-- REVEALED SURPRISE LETTER -->
+        <article class="revealed-surprise-card" id="revealedSurpriseCard" aria-live="polite">
+          <h3 class="revealed-title">Surprise Revealed For Carolyn</h3>
+          <p class="revealed-text">
+            “Carolyn Dhu, may 55 be your most wonderful year yet — filled with peace, fulfilled dreams, and joy that never runs dry.
+            <br><br>
+            You are deeply appreciated today, tomorrow, and always.”
+          </p>
+          <div style="font-family:var(--font-script); font-size:2rem; color:var(--color-rose-deep); margin-bottom:24px;">
+            — Your Best Friend, Frank Muhindo
+          </div>
+          <div class="surprise-action-wrap">
+            <button class="btn-primary" id="letRosesBloomBtn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2C9 2 7 4 7 7c0 2 1 3.5 2 4.5C8 12.5 7 14 7 16c0 3 2.5 5 5 5s5-2 5-5c0-2-1-3.5-2-4.5 1-1 2-2.5 2-4.5 0-3-2-5-5-5zm0 3c1.1 0 2 .9 2 2 0 .8-.5 1.5-1.2 1.8-.3.2-.6.5-.8.8-.2-.3-.5-.6-.8-.8-.7-.3-1.2-1-1.2-1.8 0-1.1.9-2 2-2z"/>
+              </svg>
+              <span>Let the Roses Bloom</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8: A BEAUTIFUL BIRTHDAY FINALE
+         ========================================================================== -->
+    <section class="finale-section" id="finaleSection">
+      <div class="starlight-sparkles" aria-hidden="true"></div>
+
+      <div class="finale-container">
+        <svg class="finale-crest-icon" viewBox="0 0 60 60" aria-hidden="true">
+          <circle cx="30" cy="30" r="28" fill="none" stroke="#f7e7a9" stroke-width="1.5" stroke-dasharray="4,4"/>
+          <path d="M30 12 C24 12 18 16 18 22 C18 26 20 29 22 31 C20 33 18 36 18 40 C18 46 23 50 30 50 C37 50 42 46 42 40 C42 36 40 33 38 31 C40 29 42 26 42 22 C42 16 36 12 30 12 Z" fill="#f7e7a9"/>
+        </svg>
+
+        <div class="section-tag finale-tag">The Evening Serenade</div>
+        <h2 class="finale-heading">
+          Happy 55th Birthday, <span>Carolyn Dhu</span>
+        </h2>
+
+        <div class="finale-blessing-box">
+          <p class="finale-body-text">
+            “To my dearest friend, may your life continue to bloom with beauty, your heart overflow with happiness, and your days be filled with love that grows more wonderful with every passing year.”
+          </p>
+          <div class="finale-conclusion">
+            “With love, warm wishes, and everlasting friendship, today and always.”
+          </div>
+          <div style="font-family:var(--font-script); font-size:2.2rem; color:var(--color-gold-light); margin-top:14px;">
+            — Your Best Friend, Frank Muhindo
+          </div>
+        </div>
+
+        <div class="finale-actions">
+          <button class="btn-primary" id="finaleBloomAgainBtn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/>
+            </svg>
+            <span>Make the Roses Bloom Again</span>
+          </button>
+
+          <a href="#hero" class="btn-secondary">
+            <span>Return to Beginning</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <p>Dedicated to Carolyn Dhu on Her 55th Birthday • By Your Best Friend, Frank Muhindo</p>
+    <p style="margin-top: 6px; font-size: 0.82rem; opacity: 0.7;">A Timeless Garden of Roses Celebration</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
